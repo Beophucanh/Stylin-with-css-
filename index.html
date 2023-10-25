@@ -4,11 +4,60 @@
 
     <head>
         <meta name="viewport" content="width=device-width">
-        <title>My First GitHUb </title>
+        <title>Styling with CSS</title>
       <style>
-        table.my-table {
-         border-collapse: collapse;
-       }
+        @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+        html{
+          background-color:#cccccc
+          
+        } 
+        body {
+          font-family:'Courier New';
+          max-width:960px;
+          width: 90%; 
+          background-color:#ffffff;
+          margin:auto;
+          padding: 1%;
+
+      
+        }
+
+        h1.page-header{
+          background-color:rgb(223, 165, 18);
+          text-align: center;
+          font-family:'Inknut Antiqua',serif;
+        }
+
+
+        nav{
+          text-align:center; /* centers the nav */
+        }
+
+
+        nav a{
+           color:#000; /* font color is black */
+        }
+
+
+        nav ul {
+           list-style:none; /* removes the bullets */
+        }
+        nav li
+        {
+           display:inline-block; /* makes <li> horizontal, but able to declare margins */
+           margin:0 2%; /* margin left-right, gets smaller as necessary */
+        }
+        nav a:hover{
+           text-decoration: none; /* default underline goes away on hover */
+        }
+          /* end nav rules */
+
+
+        footer{
+          text-align:center;
+          clear:both;
+          margin-top: 2%;
+        }
 
 
        table.my-table th {
@@ -31,12 +80,28 @@
        background-color: #63aaf5;
      }
       table.my-table tr:nth-child(odd) {
-       background-color: #ffffff;
+
+        background-color: #ffffff; 
+      }
+  
+    
 
       </style>
     </head>
     <body>
-      <h1>My First Github</h1>
+      <h1 class="page-header">Styling with CSS</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+        </ul>
+      </nav>
+      
+
+
       <p>Clever content goes here</p>
       <p>Clever content goes here</p>
       <p>Clever content goes here</p>
@@ -82,6 +147,7 @@
           <td>nick@gmail.com</td>
         </tr>
       </table>
+      <footer>Copyright &copy; 2023 </footer>
     </body>
 
 </html>
